@@ -1,0 +1,16 @@
+[package]
+name = "unit_tests_teloxide_bot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+teloxide = { version = "0.12.2", features = ["macros", "redis-storage", "cbor-serializer"]}
+log = "0.4"
+pretty_env_logger = "0.5"
+tokio = { version =  "1.38", features = ["rt-multi-thread", "macros"] }
+dotenvy = "0.15.7"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[dev-dependencies]
+serial_test = { version = "3.1.1" }
