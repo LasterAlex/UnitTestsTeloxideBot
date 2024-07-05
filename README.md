@@ -38,9 +38,10 @@ I've tried to make that example as drop-in as possible in terms of handlers, but
 1) Clone every file (aside from `main.rs` and `handlers.rs`) and dependency in this repo to yours (you can clean it up into your directories of choosing if you want to) and add the missing `deps![]` and `get_bot_storage` to your `main.rs` file
 2) Add the missing fields to your `.env` file
 3) Go to your handlers, and add `.intercept()` before every call to send/edit/answer something. e.g:
+
 `bot.send_message(chat_id, text::ENTER_THE_FIRST_NUMBER).await?;`
 
-↓
+↓↓↓↓↓↓↓↓↓↓↓↓
 
 `bot.send_message(chat_id, text::ENTER_THE_FIRST_NUMBER).intercept().await?;`
 
