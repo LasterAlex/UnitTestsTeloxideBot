@@ -7,7 +7,7 @@ Although it can be done, it is very clunky and not very beautiful on the inside.
 ![image](https://github.com/LasterAlex/UnitTestsTeloxideBot/assets/75775321/9e43c8b7-40ac-4968-9757-a155cb810744)
 
 ## What is in the repo?
----
+
 1) A simple bot that adds or subtracts two entered numbers
 2) Readable unit tests of that bot
 3) Unreadable insides of test utilities (ok, it's not _that_ bad, but it isn't good)
@@ -15,7 +15,7 @@ Although it can be done, it is very clunky and not very beautiful on the inside.
 5) A filter that resets the redis user state if the branch that he is currently on doesn't exist anymore after an update (no association to tests, just wanted to add it)
 
 ## How to run the tests in that bot?
----
+
 1) Download and start redis-server from your OS of choice [Ubuntu install](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-20-04), [Windows install](https://redis.io/blog/install-redis-windows-11/) [macOS install](https://redis.io/docs/latest/operate/oss_and_stack/install/install-redis/install-redis-on-mac-os/) (if you run anything else, you probably know how to install it)
 2) In the terminal, run `git clone git@github.com:LasterAlex/UnitTestsTeloxideBot.git && cd UnitTestsTeloxideBot && cp .example.env .env`
 3) Create a `.env` file in the project root directory, following the `.example.env`
@@ -28,7 +28,7 @@ Or you can `cargo install cargo-pretty-test` and run `cargo pretty-test` if you 
 ![image](https://github.com/LasterAlex/UnitTestsTeloxideBot/assets/75775321/899f4218-e274-4238-93f8-1829ab0a7870)
 
 ## How to integrate tests into an already existing bot?
----
+
 I can't give a step-by-step guide, every project is different, but i can tell, in what general direction you should go.
 I've tried to make that example as drop-in as possible in terms of handlers, but you will need to modify them a little bit
 
@@ -59,10 +59,10 @@ Or like this:
 You probably forgot to add `.intercept()` to something in that handler
 
 ## Where do i ask questions?
----
+
 [There is an official telegram group](https://t.me/teloxide), and i am a part of it, you can tag me (@laster_alex) to ask questions
 Please do it in the group, i want every question to be documented, as anyone else can also have that same question
 
 ## How can i contribute?
----
+
 I don't expect it, but if you want to upgrade or expand this repo, see `CONTRIBUTING.md` for more details
